@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        button {
+            text-align: center;
+            padding: 10px 20px;
+            margin: 15px 0 0 0;
+            font-size: 0.9rem;
+        }
+        
+        .info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info h2 {
+            margin: 0;
+        }
+        
+        .info i {
+            color: #f08080;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact">
+        <div class="class">
+            <div class="heading">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="info">
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <h2>Phone</h2>
+                </div>
+                <p>032254316884</p>
+            </div>
+            <div class="info">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <h2>Email</h2>
+                </div>
+                <p>Famir9588@gmail.com</p>
+            </div>
+            <div class="info">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>Location</h2>
+                </div>
+                <p>Lahore</p>
+            </div>
+        </div>
+        <hr>
+        <div class="form">
+            <form action="https://httpbin.org/post" method="post" target="_blank">
+                <div>
+                    <label for="name">Name</label>
+                    <div>
+                        <input type="text" name="name" id="name" autocomplete="on" required autofocus />
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <div><input type="text" name="email" id="email" required /></div>
+                </div>
+
+                <div>
+                    <label for="phone">Phone</label>
+                    <div>
+                        <input type="tel" name="phone" id="phone" pattern="^(\+92|0)?3[0-9]{9}$" required />
+                    </div>
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <br/>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                </div>
+                <button type="submit" formaction="htpps://httpbin.org/post" formmethod="post">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
