@@ -235,6 +235,7 @@ footer {
 
 .contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-start;
   padding-left: 20px;
@@ -534,4 +535,157 @@ h3 i {
   background: #f0f0f0;
   color: #aaa;
   cursor: not-allowed;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    ul {
+        margin-right: 150px;
+    }
+    
+    .home-flex {
+        padding: 30px;
+    }
+    
+    .round-face {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 992px) {
+    ul {
+        margin-right: 50px;
+    }
+    
+    .home-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .main p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button {
+        justify-content: center;
+    }
+    
+    .experience {
+        justify-content: center;
+    }
+    
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .class, .form {
+        max-width: 100%;
+    }
+    
+    .skills {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        justify-content: center;
+        margin-right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        padding: 10px;
+    }
+    
+    .main h1 {
+        font-size: 2.8rem;
+    }
+    
+    .experience {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    div span:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding-bottom: 20px;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main h1 {
+        font-size: 2.2rem;
+    }
+    
+    .round-face {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .button {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        margin: 10px 0;
+    }
+     
+    .project-title {
+        font-size: 2.2rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .project-links a {
+        justify-content: center;
+    }
+    
+    .info div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 400px) {
+    .main h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about h1, .top {
+        font-size: 2rem;
+    }
+    
+    .round-face {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .card {
+        width: 100%;
+    }
 }
