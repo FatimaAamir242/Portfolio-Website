@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        button{
+            padding: 10px 20px;
+            margin: 15px 0 0 0;
+            font-size: 0.9rem;
+            color: aliceblue;
+            background-color: #264123;
+            font-weight: bold;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-content">
+            <h2 class="company-name">GreenSprout.Co</h2>
+              <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav class="navigation">
+                <ul class="list" id="list">
+                    <li class="page"><a href="index.html">Home</a></li>
+                    <li class="page"><a href="about-page.html">About Us</a></li>
+                    <li class="page"><a href="blog-page.html">Blogs</a></li>
+                    <li class="page"><a href="product-page.html">Products</a></li>
+                    <li class="page"><a href="contact-page.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <h1 class="contact-us-heading">
+        Contact Us
+    </h1>
+  
+    <div class="two-parts">
+        <div class="part1">
+            <h2>Contact Information</h2>
+            <div class="Information">
+                <div class="info-header">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                </div>
+                <p>032254316884</p>
+            </div>
+            <div class="Information">
+                <div class="info-header">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                </div>
+                <p>Famir9588@gmail.com</p>
+            </div>
+            <div class="Information">
+                <div class="info-header">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                </div>
+                <p>Lahore</p>
+            </div>
+        </div>
+        <div class="part2">
+            <form action="https://httpbin.org/post" method="post" target="_blank">
+                <div>
+                    <label for="name">Name</label>
+                    <div>
+                        <input type="text" name="name" id="name" autocomplete="on" required autofocus />
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <div><input type="text" name="email" id="email" required /></div>
+                </div>
+
+                <div>
+                    <label for="phone">Phone</label>
+                    <div>
+                        <input type="tel" name="phone" id="phone" pattern="^(\+92|0)?3[0-9]{9}$" required />
+                    </div>
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <br />
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here"></textarea>
+                </div>
+                <button type="submit" formaction="htpps://httpbin.org/post" formmethod="post">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="company">
+            <h3>Company</h3>
+            <div>GreenSprout.Co</div>
+            <div>Grow Green. Live Clean.</div>
+        </div>
+        <div class="quick-access">
+            <h3>Quick Links</h3>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about-page.html">About Us</a></div>
+            <div><a href="blog-page.html">Blogs</a></div>
+            <div><a href="product-page.html">Products</a></div>
+            <div><a href="contact-page.html">Contact Us</a></div>
+        </div>
+        <div class="social">
+            <div><i class="fab fa-facebook-f"></i></div>
+            <div><i class="fab fa-instagram"></i></div>
+            <div><i class="fab fa-twitter"></i></div>
+        </div>
+        <div class="news-letter">
+            <h3>Join Our Eco-Community</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="order-btn">Subscribe</button>
+            </form>
+            <p> &lt;&lt;&lt; &copy; GreenSprout.co- All rights reserved &gt;&gt;&gt; </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

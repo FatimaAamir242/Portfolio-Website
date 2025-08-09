@@ -73,7 +73,7 @@ header {
 .SearchBar button:hover {
   background: #d23669;
   transform: scale(1.05);
-}
+} 
 
 .menu ul {
   display: flex;
@@ -152,22 +152,8 @@ header {
   margin: 0;
 }
 
-.img1 h2 {
+.img1 h2 ,.img2 h2 ,.img3 h2{
   top: 40px;
-  left: 40px;
-  max-width: 300px;
-  text-align: left;
-}
-
-.img2 h2 {
-  top: 40px;
-  right: 40px;
-  max-width: 300px;
-  text-align: right;
-}
-
-.img3 h2 {
-  bottom: 40px;
   left: 40px;
   max-width: 300px;
   text-align: left;

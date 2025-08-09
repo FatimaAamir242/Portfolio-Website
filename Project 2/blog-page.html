@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .blogs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+
+        .card {
+            width: 360px;
+            min-width: 0;
+            height: auto;
+            margin: 30px;
+            border-radius: 12px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card-button {
+            margin-top: auto;
+            margin-bottom: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-content">
+            <h2 class="company-name">GreenSprout.Co</h2>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav class="navigation">
+                <ul class="list" id="list">
+                    <li class="page"><a href="index.html">Home</a></li>
+                    <li class="page"><a href="about-page.html">About Us</a></li>
+                    <li class="page"><a href="blog-page.html">Blogs</a></li>
+                    <li class="page"><a href="product-page.html">Products</a></li>
+                    <li class="page"><a href="contact-page.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="blog-heading">Blogs</h1>
+    <div class="blogs">
+        <div class="card" id="card">
+            <img class="card-img" src="img/gareth-hubbard-Z_fl2kybrm0-unsplash.jpg" alt="Cozy Kitchen">
+            <h3 class="card-heading">5 Simple Swaps for a Greener Home</h3>
+            <p class="card-paragraph"
+                data-full="Discover easy, low-cost changes you can make today — from bamboo toothbrushes to reusable produce bags — that reduce waste without sacrificing comfort.
+Swap paper towels for cloth napkins, invest in a stainless steel water bottle, and ditch single-use plastic wrap for beeswax wraps. Even small switches like using bar soap instead of plastic bottles can make a big difference. These changes are affordable, simple to adopt, and help create a greener home with less effort than you'd expect."
+                id="card-paragraph">Discover easy, low-cost changes you can make today — from bamboo toothbrushes to
+                reusable produce bags — that reduce waste without sacrificing comfort.</p>
+            <button class="card-button" id="card-button">Read More</button>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="img/gareth-hubbard-Z_fl2kybrm0-unsplash.jpg" alt="Cozy Kitchen">
+            <h3 class="card-heading">5 Simple Swaps for a Greener Home</h3>
+            <p class="card-paragraph"
+                data-full="Discover easy, low-cost changes you can make today — from bamboo toothbrushes to reusable produce bags — that reduce waste without sacrificing comfort.
+            
+Swap paper towels for cloth napkins, invest in a stainless steel water bottle, and ditch single-use plastic wrap for beeswax wraps. Even small switches like using bar soap instead of plastic bottles can make a big difference. These changes are affordable, simple to adopt, and help create a greener home with less effort than you'd expect."
+                id="card-paragraph">Discover easy, low-cost changes you can make
+                today — from bamboo toothbrushes to reusable
+                produce bags — that reduce waste without
+                sacrificing comfort.</p>
+            <button class="card-button">Read More</button>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="img/lawrence-krowdeed-Gh03K86-oeY-unsplash.jpg" alt="Clothes">
+            <h3 class="card-heading">The Truth About Fast Fashion</h3>
+            <p class="card-paragraph"
+                data-full="Fast fashion may be trendy, but it comes at a high cost to the environment. Learn what it means to shop sustainably and why it matters more than ever.
+
+The fashion industry is one of the largest polluters, consuming massive water resources and producing textile waste. Clothes are often made unethically and discarded quickly. Shopping sustainably means buying less, choosing quality over quantity, supporting ethical brands, and embracing secondhand options. It’s not just about style — it’s about making mindful, long-lasting choices that benefit people and the planet."
+                id="card-paragraph">Fast fashion may be trendy, but it comes at a high cost to the environment.
+                Learn what it means to shop sustainably and why it matters more than ever.</p>
+            <button class="card-button">Read More</button>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="img/lawrence-krowdeed-Gh03K86-oeY-unsplash.jpg" alt="Clothes">
+            <h3 class="card-heading">The Truth About Fast Fashion</h3>
+            <p class="card-paragraph"
+                data-full="Fast fashion may be trendy, but it comes at a high cost to the environment. Learn what it means to shop sustainably and why it matters more than ever.
+
+The fashion industry is one of the largest polluters, consuming massive water resources and producing textile waste. Clothes are often made unethically and discarded quickly. Shopping sustainably means buying less, choosing quality over quantity, supporting ethical brands, and embracing secondhand options. It’s not just about style — it’s about making mindful, long-lasting choices that benefit people and the planet."
+                id="card-paragraph">Fast fashion may be trendy, but it comes at a high cost to the environment.
+                Learn what it means to shop sustainably and why it matters more than ever.</p>
+            <button class="card-button">Read More</button>
+        </div>
+
+        <div class="card ">
+            <img class="card-img" src="img/dinesh-k-qNYE7EJFGNU-unsplash.jpg" alt="Compost">
+            <h3 class="card-heading">Composting 101:Turning Waste Into Gold</h3>
+            <p class="card-paragraph"
+                data-full="Composting isn’t just for farmers! Here’s a beginner-friendly guide to turning your kitchen scraps into nutrient-rich soil for plants.
+
+Start with a small bin — even a bucket will do. Mix 'greens' (like veggie peels, fruit scraps, coffee grounds) and 'browns' (like dried leaves, cardboard, paper) to create the right balance. Turn your compost occasionally and keep it moist. In a few weeks to months, you’ll have healthy, earthy-smelling compost perfect for houseplants, gardens, or community green spaces. It's a great way to reduce kitchen waste and reconnect with nature."
+                id="card-paragraph">Composting isn’t just for farmers! Here’s a beginner-friendly guide to turning
+                your kitchen scraps into nutrient-rich soil for plants.</p>
+            <button class="card-button">Read More</button>
+        </div>
+
+        <div class="card ">
+            <img class="card-img" src="img/dinesh-k-qNYE7EJFGNU-unsplash.jpg" alt="Compost">
+            <h3 class="card-heading">Composting 101:Turning Waste Into Gold</h3>
+            <p class="card-paragraph"
+                data-full="Composting isn’t just for farmers! Here’s a beginner-friendly guide to turning your kitchen scraps into nutrient-rich soil for plants.
+
+Start with a small bin — even a bucket will do. Mix 'greens' (like veggie peels, fruit scraps, coffee grounds) and 'browns' (like dried leaves, cardboard, paper) to create the right balance. Turn your compost occasionally and keep it moist. In a few weeks to months, you’ll have healthy, earthy-smelling compost perfect for houseplants, gardens, or community green spaces. It's a great way to reduce kitchen waste and reconnect with nature."
+                id="card-paragraph">Composting isn’t just for farmers! Here’s a beginner-friendly
+                guide to turning
+                your kitchen scraps into nutrient-rich soil for plants.</p>
+            <button class="card-button" id="card-button">Read More</button>
+        </div>
+    </div>
+    <footer>
+        <div class="company">
+            <h3>Company</h3>
+            <div>GreenSprout.Co</div>
+            <div>Grow Green. Live Clean.</div>
+        </div>
+        <div class="quick-access">
+            <h3>Quick Links</h3>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about-page.html">About Us</a></div>
+            <div><a href="blog-page.html">Blogs</a></div>
+            <div><a href="product-page.html">Products</a></div>
+            <div><a href="contact-page.html">Contact Us</a></div>
+        </div>
+        <div class="social">
+            <div><i class="fab fa-facebook-f"></i></div>
+            <div><i class="fab fa-instagram"></i></div>
+            <div><i class="fab fa-twitter"></i></div>
+        </div>
+        <div class="news-letter">
+            <h3>Join Our Eco-Community</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="order-btn">Subscribe</button>
+            </form>
+            <p> &lt;&lt;&lt; &copy; GreenSprout.co- All rights reserved &gt;&gt;&gt; </p>
+        </div>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll(".card-button");
+
+    buttons.forEach((btn) => {
+        // Store the original short text as a data attribute
+        const paragraph = btn.previousElementSibling;
+        paragraph.setAttribute('data-short', paragraph.textContent);
+
+        btn.addEventListener("click", (e) => {
+            const card = e.currentTarget.closest('.card');
+            const paragraph = card.querySelector('.card-paragraph');
+            const fullText = paragraph.getAttribute('data-full');
+            const shortText = paragraph.getAttribute('data-short');
+            
+            const isExpanded = paragraph.getAttribute('data-expanded') === 'true';
+            
+            if (isExpanded) {
+                // Collapse back to short text
+                paragraph.textContent = shortText;
+                e.currentTarget.textContent = "Read More";
+                paragraph.setAttribute('data-expanded', 'false');
+                card.classList.remove('expanded');
+            } else {
+                // Expand to show full text
+                paragraph.textContent = fullText;
+                e.currentTarget.textContent = "Read Less";
+                paragraph.setAttribute('data-expanded', 'true');
+                card.classList.add('expanded');
+            }
+        });
+    });
+});
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

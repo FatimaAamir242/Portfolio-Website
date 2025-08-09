@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSprout.Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-content">
+            <h2 class="company-name">GreenSprout.Co</h2>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav class="navigation">
+                <ul class="list" id="list">
+                    <li class="page"><a href="#main-page">Home</a></li>
+                    <li class="page"><a href="about-page.html">About Us</a></li>
+                    <li class="page"><a href="blog-page.html">Blogs</a></li>
+                    <li class="page"><a href="product-page.html">Products</a></li>
+                    <li class="page"><a href="contact-page.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" id="main-page">
+        <div class="background">
+            <div class="motto">Grow Green </div>
+            <div class="motto2">Live Green</div>
+            <p>
+                At GreenSprout.Co, we believe in building a future rooted in sustainability, one habit at a time. Through our eco-blog and product showcases, we aim to inspire conscious living for individuals and communities alike.
+            </p>
+        </div>
+        <div class="empty"></div>
+        <div class="image-overlay">
+            <img src="img/Download premium png of Philodendron melanoneuron png mockup in a ceramic pot by Roungroat about plant png, potted plant, flower pot, plant pot, and philodendron 3220181 2 (1).png" alt="Plant image" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+    </div>
+
+    <h2 class="featured-blog">Featured Blogs</h2>
+
+    <div class="featured">
+        <div class="slider">
+            <div class="card active-slide">
+                <img class="card-img" src="img/gareth-hubbard-Z_fl2kybrm0-unsplash.jpg" alt="Cozy Kitchen">
+                <h3 class="card-heading">5 Simple Swaps for a Greener Home</h3>
+                <p class="card-paragraph" data-full="Discover easy, low-cost changes you can make today — from bamboo toothbrushes to reusable produce bags — that reduce waste without sacrificing comfort. Swap paper towels for cloth napkins, invest in a stainless steel water bottle, and ditch single-use plastic wrap for beeswax wraps. Even small switches like using bar soap instead of plastic bottles can make a big difference. These changes are affordable, simple to adopt, and help create a greener home with less effort than you'd expect.">
+                    Discover easy, low-cost changes you can make today — from bamboo toothbrushes to reusable produce bags — that reduce waste without sacrificing comfort.
+                </p>
+                <button class="card-button">Read More</button>
+            </div>
+
+            <div class="card next-slide">
+                <img class="card-img" src="img/lawrence-krowdeed-Gh03K86-oeY-unsplash.jpg" alt="Clothes">
+                <h3 class="card-heading">The Truth About Fast Fashion</h3>
+                <p class="card-paragraph" data-full="Fast fashion may be trendy, but it comes at a high cost to the environment. Learn what it means to shop sustainably and why it matters more than ever. The fashion industry is one of the largest polluters, consuming massive water resources and producing textile waste. Clothes are often made unethically and discarded quickly. Shopping sustainably means buying less, choosing quality over quantity, supporting ethical brands, and embracing secondhand options. It’s not just about style — it’s about making mindful, long-lasting choices that benefit people and the planet.">
+                    Fast fashion may be trendy, but it comes at a high cost to the environment. Learn what it means to shop sustainably and why it matters more than ever.
+                </p>
+                <button class="card-button">Read More</button>
+            </div>
+
+            <div class="card next-slide">
+                <img class="card-img" src="img/dinesh-k-qNYE7EJFGNU-unsplash.jpg" alt="Compost">
+                <h3 class="card-heading">Composting 101: Turning Waste Into Gold</h3>
+                <p class="card-paragraph" data-full="Composting isn’t just for farmers! Here’s a beginner-friendly guide to turning your kitchen scraps into nutrient-rich soil for plants. Start with a small bin — even a bucket will do. Mix 'greens' (like veggie peels, fruit scraps, coffee grounds) and 'browns' (like dried leaves, cardboard, paper) to create the right balance. Turn your compost occasionally and keep it moist. In a few weeks to months, you’ll have healthy, earthy-smelling compost perfect for houseplants, gardens, or community green spaces. It's a great way to reduce kitchen waste and reconnect with nature.">
+                    Composting isn’t just for farmers! Here’s a beginner-friendly guide to turning your kitchen scraps into nutrient-rich soil for plants.
+                </p>
+                <button class="card-button">Read More</button>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="company">
+            <h3>Company</h3>
+            <div>GreenSprout.Co</div>
+            <div>Grow Green. Live Clean.</div>
+        </div>
+        <div class="quick-access">
+            <h3>Quick Links</h3>
+            <div><a href="#main-page">Home</a></div>
+            <div><a href="about-page.html">About Us</a></div>
+            <div><a href="blog-page.html">Blogs</a></div>
+            <div><a href="product-page.html">Products</a></div>
+            <div><a href="contact-page.html">Contact Us</a></div>
+        </div>
+        <div class="social">
+            <div><i class="fab fa-facebook-f"></i></div>
+            <div><i class="fab fa-instagram"></i></div>
+            <div><i class="fab fa-twitter"></i></div>
+        </div>
+        <div class="news-letter">
+            <h3>Join Our Eco-Community</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="order-btn">Subscribe</button>
+            </form>
+            <p>&lt;&lt;&lt; &copy; GreenSprout.Co - All rights reserved &gt;&gt;&gt;</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll(".card");
+            const dots = document.querySelectorAll(".dot");
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active-slide");
+                    slide.style.display = "none";
+                });
+
+                slides[index].classList.add("active-slide");
+                slides[index].style.display = "flex";
+
+                dots.forEach((dot) => dot.style.backgroundColor = "#d9d9d9");
+                dots[index].style.backgroundColor = "#264123";
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    currentIndex = index;
+                    showSlide(currentIndex);
+                });
+            });
+
+            showSlide(0); // Initialize
+
+            // Read More / Read Less
+            const buttons = document.querySelectorAll(".card-button");
+            buttons.forEach((btn) => {
+                const paragraph = btn.previousElementSibling;
+
+                if (!paragraph.hasAttribute('data-short')) {
+                    paragraph.setAttribute('data-short', paragraph.textContent);
+                }
+
+                btn.addEventListener("click", () => {
+                    const fullText = paragraph.getAttribute('data-full');
+                    const shortText = paragraph.getAttribute('data-short');
+                    const isExpanded = paragraph.getAttribute('data-expanded') === 'true';
+
+                    if (isExpanded) {
+                        paragraph.textContent = shortText;
+                        btn.textContent = "Read More";
+                        paragraph.setAttribute('data-expanded', 'false');
+                    } else {
+                        paragraph.textContent = fullText;
+                        btn.textContent = "Read Less";
+                        paragraph.setAttribute('data-expanded', 'true');
+                    }
+                });
+            });
+        });
+
+</script>
+<script src="script.js"></script>
+</body>
+
+</html>
+
