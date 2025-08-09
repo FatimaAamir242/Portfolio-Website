@@ -210,75 +210,77 @@ header {
   transition: all 0.2s ease;
 }
 
+/* Updated Footer Styles Start */
 footer {
   background-color: rgba(36, 71, 32, 0.75);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   color: azure;
-  height: 250px;
+  padding: 20px;
+  min-height: 250px;
 }
 
-.company {
-  margin: 10px;
-  padding: 10px;
+.company, 
+.quick-access, 
+.social, 
+.news-letter {
+  padding: 15px;
+
+  flex: 1;
 }
 
+.social i {
+padding: 20px;
+}
 .company div {
   margin-top: 5px;
-}
-
-.quick-access {
-  margin: 10px;
-  padding: 10px;
 }
 
 .quick-access a {
   text-decoration: none;
   color: azure;
   cursor: pointer;
+  display: block;
+  margin: 5px 0;
 }
 
-.social div {
-  margin: 10px;
-  padding: 10px;
-}
+
 
 .news-letter {
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
-  max-width: 400px;
-  width: 100%;
+  border: 2px solid;
+  min-width: 350px; 
+  max-width: 500px; 
+  width: 100%; 
+  padding: 20px; 
 }
 
 .newsletter-form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   gap: 10px;
   margin-top: 10px;
 }
 
 .newsletter-form input {
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 25px;
   border: none;
   outline: none;
-  width: 70%;
-  max-width: 300px;
+  width: 100%;
 }
 
 .newsletter-form .order-btn {
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 25px;
   border: none;
   background-color: #244720;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .news-letter p {
@@ -286,6 +288,47 @@ footer {
   font-size: 14px;
   color: #d2f4e3;
 }
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 20px;
+  }
+  
+  .company, 
+  .quick-access, 
+  .social, 
+  .news-letter {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 0;
+  }
+  
+  .social {
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .quick-access div {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-form input,
+  .newsletter-form .order-btn {
+    width: 100%;
+  }
+}
+/* Updated Footer Styles End */
+
 .blog-heading {
   text-align: center;
   padding: 20px;
@@ -573,6 +616,15 @@ textarea {
   .two-parts {
   gap: 30px;
 }
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+.social i{
+  margin: 0;
+}
 }
  
 @media (max-width:430px){
@@ -626,4 +678,4 @@ textarea {
 }
 
 
-}  
+}
